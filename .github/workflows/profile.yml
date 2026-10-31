@@ -1,5 +1,5 @@
-# Regenerates the contribution snake and the stats card every day and
-# publishes them to the `output` branch, which the README links to.
+# Regenerates the activity card (stats + contribution graph) every day and
+# publishes it to the `output` branch, which the README links to.
 name: profile
 
 on:
@@ -23,15 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - name: Snake
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/snake-dark.svg?color_snake=#c792ea&color_dots=#161616,#2e2e2e,#4d4d4d,#8f8f8f,#e5e5e5
-            dist/snake-light.svg?color_snake=#9333ea&color_dots=#efefef,#d4d4d4,#a3a3a3,#5c5c5c,#1a1a1a
-
-      - name: Stats
+      - name: Activity card
         run: node scripts/stats.mjs dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

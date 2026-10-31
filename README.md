@@ -49,13 +49,8 @@
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Akio1965/Akio1965/output/stats-dark.svg">
-  <img src="https://raw.githubusercontent.com/Akio1965/Akio1965/output/stats-light.svg" width="100%" alt="Contribution stats for the last 12 months">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Akio1965/Akio1965/output/snake-dark.svg">
-  <img src="https://raw.githubusercontent.com/Akio1965/Akio1965/output/snake-light.svg" width="100%" alt="A snake eating the contribution graph">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Akio1965/Akio1965/output/activity-dark.svg">
+  <img src="https://raw.githubusercontent.com/Akio1965/Akio1965/output/activity-light.svg" width="100%" alt="Contribution activity for the last 12 months">
 </picture>
 
 <picture>
